@@ -59,7 +59,14 @@ class Song
   end
   
   def self.new_from_filename(name)
-    self.create_by_name(name.split(".")[0])
+    self.new_by_name(name.split(".")[0])
   end 
+  
+  
+  def self.create_from_filename(name)
+    self.create_from_filename(name.split(".")[0])
+  end 
+  
+  
   
 end

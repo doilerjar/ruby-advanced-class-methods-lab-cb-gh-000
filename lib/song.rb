@@ -40,7 +40,7 @@ class Song
     return nil 
   end
   
-  def self.find_or_crate_by_name(name)
+  def self.find_or_create_by_name(name)
     song = self.find_by_name(name)
     if song == nil
       song = self.create_by_name(name)

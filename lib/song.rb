@@ -40,6 +40,14 @@ class Song
     return nil 
   end
   
+  def self.find_or_crate_by_name(name)
+    song = self.find_by_name(name)
+    if song = nil
+      song = create_by_name(name)
+    end
+    return song
+  end
+  
   def self.destroy_all
     @@all = []
   end 

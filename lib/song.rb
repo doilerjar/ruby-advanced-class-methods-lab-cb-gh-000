@@ -60,13 +60,16 @@ class Song
   
   def self.new_from_filename(name)
     song = self.new
-    song.name = 
-    self.new_by_name(name.split(".")[0])
+    song.name = name.split("-")[1].split(".")[0].strip
+    song.artist_name = name.split("-")[0].strip
+    @@all << song
+    song
   end 
   
   
   def self.create_from_filename(name)
-    self.create_by_name(name.split(".")[0])
+    song = self.new_from_filename(name)
+    song
   end 
   
   

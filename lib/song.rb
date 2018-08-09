@@ -37,6 +37,7 @@ class Song
         return song
       end
     end
+    return nil 
   end
   
   def self.destroy_all

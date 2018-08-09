@@ -61,7 +61,8 @@ class Song
   def self.new_from_filename(name)
     song = self.new
     song.name = name.split(".")[0]
-    
+    @@all << song
+    song
   end 
   
 end

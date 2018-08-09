@@ -52,4 +52,10 @@ class Song
     @@all = []
   end 
   
+  def self.alphabetical
+    
+  end
+  
+  
+  
 end

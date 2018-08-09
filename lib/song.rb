@@ -53,7 +53,8 @@ class Song
   end 
   
   def self.alphabetical
-    @@all.e
+    @@all.sort_by do |song|
+      
   end
   
   
